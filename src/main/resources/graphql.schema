@@ -1,0 +1,12 @@
+input Message {
+    content: String
+}
+
+type Query {
+    listInput(inputs: [Message!]!): String
+    listInputAnnotated(inputs: [Message!]!): String
+}
+
+schema {
+    query: Query
+}
